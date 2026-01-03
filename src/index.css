@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+[data-theme="dark"] {
+    --sun: block;
+    --moon: none;
+    --mode-color: #eee;
+    --background-color: #121212;
+    --text-color: #f3f1f1cd;
+    --link-bg: rgba(255, 255, 255, 0.1);
+    --link-hover: rgba(255, 255, 255, 0.15);
+    --heading_1_color: #ffffff;
+}
+
+[data-theme="light"] {
+    --sun: none;
+    --moon: block;
+    --heading_1_color: #121112;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --link-bg: rgba(0, 0, 0, 0.05);
+    --link-hover: rgba(0, 0, 0, 0.1);
+    --mode-color: #121212;
+}
+
+/* global.css or wherever your base styles live */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+body{
+  background-image: url(./images/bgPattern.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center ;
+}
+
+
+/* Tailwind’s breakpoints: sm = 640px, md = 768px, lg = 1024px */
+@media (min-width: 640px) {
+    .container {
+        width: calc(100% - 48px);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: calc(100% - 96px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: calc(100% - 144px);
+    }
+}
