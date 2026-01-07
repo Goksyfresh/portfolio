@@ -16,7 +16,7 @@ export default function BlogPost() {
   }
 
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article className="max-w-4xl mx-auto px-4 mt-10 sm:px-6 lg:px-8 py-12">
       {/* Header Section */}
       <header className="mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold [color:var(--heading_1_color)] mb-4 leading-tight">
