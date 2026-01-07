@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@layer base {
+  html, body {
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 [data-theme="dark"] {
     --sun: block;
     --moon: none;
@@ -27,13 +38,19 @@
     width: 100%;
     margin: 0 auto;
 }
-body{
+/* Default body (light mode) - no background image */
+body {
+  background-color: var(--background-color);
+  background-image: none;
+}
+
+/* Background image only in dark mode */
+[data-theme="dark"] body {
   background-image: url(./images/bgPattern.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center ;
+  background-position: center;
 }
-
 
 /* Tailwind’s breakpoints: sm = 640px, md = 768px, lg = 1024px */
 @media (min-width: 640px) {

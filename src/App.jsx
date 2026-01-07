@@ -12,12 +12,22 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPage'
+import Lenis from 'lenis'
 
 function App() {
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
 
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+
+});
 
   return (
     <>
+    
      <Navbar/>
   
      

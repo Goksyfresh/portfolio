@@ -4,6 +4,7 @@ import Projects from '../components/Projects'
 import About from '../components/About'
 
 const Home = () => {
+
   return (
     <div>
       <About/>

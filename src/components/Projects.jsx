@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectComponent from './projectComponent'
-import projectImage from '../images/kick.png'
+import projectImage from '../images/kicky.png'
 import projectImage2 from '../images/otf.png'
 import projectImage3 from '../images/shopper.png'
 

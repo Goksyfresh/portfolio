@@ -1,6 +1,18 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap';
+import { SplitText } from 'gsap/all';
+gsap.registerPlugin(SplitText);
 import React from 'react'
 
 const Bio = () => {
+  
+  useGSAP(() => {
+    const split = new SplitText('section p', { type: 'lines', linesClass: 'lineChildren', mask:'lines' }); 
+    gsap.fromTo(split.lines, 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, duration: 1, y: 0, stagger: 0.1, ease: 'power2.out' }
+    );
+  }, []);
   return (
     <section className='flex flex-col items-center justify-center gap-4 mt-35 px-6'>
         <h2 className='[color:var(--heading_1_color)] lg:text-3xl text-xl uppercase'>About me</h2>
