@@ -10,8 +10,8 @@ export default function Blog() {
 
        <h1 className=" [color:var(--heading_1_color)] lg:text-4xl text-xl font-bold">Posts</h1> 
       {blogPosts.map(post => (
-        <article key={post.slug} className='flex flex-col gap-2 border-b border-[var(--text-color)] pb-4 w-[80%]'>
-          <h2 className="[color:var(--heading_1_color)] lg:text-3xl text-xl">
+        <article key={post.slug} className='flex flex-col gap-2 border-b border-[var(--text-color)] pb-4'>
+          <h2 className="[color:var(--heading_1_color)] font-bold lg:text-3xl text-xl">
             <Link to={`/blog/${post.slug}`}>{post.title}</Link>
           </h2>
           <p className="[color:var(--text-color)] text-sm">{post.date}</p>

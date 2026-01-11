@@ -1,6 +1,6 @@
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoHomeOutline } from "react-icons/io5";
+import { AiOutlineHome } from "react-icons/ai";
 import { IoIosClose } from "react-icons/io";
 import { useHeader } from "../hooks/useHeader";
 import { useEffect, useState, useRef } from "react";
@@ -54,8 +54,9 @@ export default function Navbar() {
             <div className="mx-auto max-w-60 rounded-full border border-[#CBC3B9] bg-transparent px-6 py-2 backdrop-blur">
                 <div className="flex items-center justify-between text-nowrap transition duration-200">
                     <Link to="/" className="cursor-pointer transition-transform hover:scale-110">
-                        <IoHomeOutline
-                            className="h-6 w-6 [color:var(--heading_1_color)]"
+                        <AiOutlineHome
+                        
+                            className="h-5 w-5 [color:var(--heading_1_color)]"
                         />
                     </Link>
                     
@@ -94,12 +95,7 @@ export default function Navbar() {
                             >
                                 Blog
                             </Link>
-                            <Link
-                                to="/contact"
-                                className="[color:var(--text-color)] hover:[color:var(--link-hover)] transition-all hover:translate-x-1"
-                            >
-                                Contact
-                            </Link>
+            
                         </div>
                     )}
                     
@@ -107,7 +103,7 @@ export default function Navbar() {
                         onClick={handleMenuToggle}
                         className="h-8 w-8 [color:var(--heading_1_color)] transition-transform hover:scale-110 active:scale-95"
                     >
-                        {isOpen ? <IoIosClose size={20} /> : <GiHamburgerMenu />}
+                        {isOpen ? <IoIosClose className="h-6 w-6" /> : <GiHamburgerMenu />}
                     </button>
                 </div>
             </div>

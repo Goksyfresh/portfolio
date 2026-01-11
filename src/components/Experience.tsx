@@ -9,9 +9,8 @@ const Experience = () => {
         <h3 className='[color:var(--heading_1_color)] lg:text-xl text-lg'>Frontend Engineer at Qorporate</h3>
         <p className='[color:var(--text-color)] uppercase text-sm '>August 2025 - present</p>
         </div>
-        <p className='[color:var(--text-color)] lg:text-xl text-lg w-[80%] text-center'>As a passionate software engineer, I thrive on the intricate dance between logic and creativity. Currently immersed in the dynamic world of WebHR, my expertise centers around React Native, where I seamlessly blend technology with innovation.
-</p>
-<p className='[color:var(--text-color)] lg:text-xl text-lg w-[80%] text-center'>With a fervor for crafting elegant solutions, I navigate the ever-evolving landscape of software development. My journey involves translating concepts into code, creating seamless user experiences, and constantly pushing the boundaries of what's possible</p>
+   
+<p className='[color:var(--text-color)] lg:text-xl text-lg w-[80%] text-center'>Built and maintained features for a football turf session management platform, collaborating closely with a cross-functional team. Developed user interfaces that streamlined booking, match scheduling, and player management, ensuring a smooth and engaging experience for users.</p>
    <div className='flex gap-4 items-center justify-center mt-4 w-[80%] flex-wrap'>
     <Stack stack="React" />
      <Stack stack="Svelte" />
