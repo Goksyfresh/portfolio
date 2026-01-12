@@ -18,7 +18,7 @@ const Projects = () => {
             title="Kickabout"
             description="A bright startup idea where users can create 5 aside football sessions with flexibility of time, location and skill level and others can join. Users also have the luxury of rating and reviewing each other after a kickabout session."
             siteLink="https://kickabout.vercel.app"
-            Xlink="https://x.com/oyegoke19/status/18952263818875122891?s=46"
+            Xlink="https://x.com/oyegoke19/status/1895226381887512891?s=46)"
             gitLink="https://github.com/Goksyfresh/Kickabout.git"
             techStack={["React Native", "React", "TypeScript", "Node.js", "Jest", "MongoDB","TailwindCSS","Zustand"]}
           />
