@@ -1,9 +1,10 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { blogPosts } from "../components/BlogPost";
 
 export default function BlogPost() {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const post = blogPosts.find(p => p.slug === slug);
 
   if (!post) {
@@ -18,10 +19,9 @@ export default function BlogPost() {
     <article className="font-montserrat max-w-4xl mx-auto px-4 mt-10 sm:px-6 lg:px-8 py-12">
 
       {/* Navigation Link */}
-      <nav className="mb-8">
+      <nav className=" mt-6 mb-8">
         <Link 
           to="/blog" 
-          className="inline-flex items-center hover:text-blue-800 transition-colors"
         >
           <svg 
             className="w-5 h-5 mr-2" 
@@ -36,7 +36,7 @@ export default function BlogPost() {
               d="M10 19l-7-7m0 0l7-7m-7 7h18" 
             />
           </svg>
-          Back to all posts
+        
         </Link>
       </nav>
 

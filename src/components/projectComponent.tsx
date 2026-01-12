@@ -3,13 +3,14 @@ import { FaGithub } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { HiExternalLink } from 'react-icons/hi'
 
-const ProjectComponent = ({img, title, description, Xlink, gitLink, siteLink}: {
+const ProjectComponent = ({img, title, description, Xlink, gitLink, siteLink, techStack}: {
   img: string, 
   title: string, 
   description: string, 
   Xlink: string, 
   gitLink: string,
-  siteLink: string
+  siteLink: string,
+  techStack: string[]
 }) => {
   return (
     <div className='flex flex-col items-start gap-3 rounded-xl w-[300px] lg:w-[350px]' style={{
@@ -48,12 +49,24 @@ const ProjectComponent = ({img, title, description, Xlink, gitLink, siteLink}: {
         {/* Description */}
         <p className='[color:var(--text-color)] text-sm lg:text-base'>{description}</p>
 
+        {/* Tech Stack Tags */}
+        <div className='flex flex-wrap gap-2'>
+          {techStack.map((tech, index) => (
+            <span 
+              key={index}
+              className='px-2 py-1 bg-[var(--link-bg)] text-[var(--text-color)] text-xs rounded-md border border-[var(--heading_1_color)] border-opacity-20'
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
         {/* View Code Button */}
         <a 
           href={gitLink} 
           target="_blank" 
           rel="noopener noreferrer"
-          className='flex items-center gap-2 px-4 py-2 bg-[var(--link-bg)] hover:bg-[var(--link-hover)] text-[var(--text-color)] rounded-full transition-colors duration-200 text-sm font-medium'
+          className='flex items-center gap-2 px-4 py-2 bg-[var(--link-bg)] hover:bg-[var(--link-hover)] text-[var(--text-color)] rounded-full transition-colors duration-200 text-sm font-medium w-full justify-center'
         >
           <FaGithub className='text-[var(--heading_1_color)]' size={18} />
           View Code

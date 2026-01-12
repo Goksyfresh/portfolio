@@ -3,8 +3,8 @@ import Stack from './Stack'
 
 const Experience = () => {
   return (
-    <section className='flex flex-col items-center justify-center gap-4 mt-35 px-4'>
-        <h2 className='[color:var(--heading_1_color)] lg:text-3xl text-xl uppercase'>Experience</h2>
+    <section className='flex flex-col items-center justify-center gap-4 mt-35 px-2'>
+        <h2 className='[color:var(--heading_1_color)] lg:text-3xl text-xl font-bold uppercase'>Experience</h2>
         <div className='flex justify-between items-center w-[60%]'>
         <h3 className='[color:var(--heading_1_color)] lg:text-xl text-lg'>Frontend Engineer at Qorporate</h3>
         <p className='[color:var(--text-color)] uppercase text-sm '>August 2025 - present</p>

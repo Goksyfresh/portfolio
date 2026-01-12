@@ -86,7 +86,7 @@ const About = () => {
   }, []);
   return (
     <section className='flex flex-col items-center justify-center gap-4 mt-35 px-6'>
-      <img src={PortfolioImage} className='h-[220px] w-[220px]' id='portfolioImg' alt="Portfolio" />
+      <img src={PortfolioImage} className='h-[190px] w-[190px]' id='portfolioImg' alt="Portfolio" />
       <h1 className='name [color:var(--heading_1_color)] lg:text-4xl text-2xl'>Opajobi Oyegoke</h1>
       <p className='bio [color:var(--text-color)] lg:text-xl text-sm text-center w-[50%]'>I build user interfaces, think deeply about how software works, and write to make complex ideas easier to understand. I’m most excited when a project moves from an idea in my head to something real in the world.</p>
   <div class="links flex gap-6 justify-center items-center flex-wrap font-mono">
