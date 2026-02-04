@@ -3,6 +3,7 @@ import ProjectComponent from "./projectComponent";
 import projectImage from "../images/kicky.png";
 import projectImage2 from "../images/otf.png";
 import projectImage3 from "../images/shopper.png";
+import projectImage4 from "../images/oaken.png"
 
 const Projects = () => {
   return (
@@ -11,7 +12,16 @@ const Projects = () => {
         Projects
       </h2>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 ">
-        <a href="#">
+     {" "}
+          <ProjectComponent
+            img={projectImage4}
+            title="Oaken furniture website"
+            description="An ecommerce furniture website designed by a twitter mutual."
+            siteLink="https://oaken.vercel.app"
+            Xlink="https://x.com/Oyegoke19/status/2018945806091297056?s=20"
+            gitLink="https://github.com/Goksyfresh/oaken.git"
+            techStack={['Nextjs', 'TypeScript', 'GSAP', 'TailwindCSS','Lenis']}
+          />
           {" "}
           <ProjectComponent
             img={projectImage}
@@ -22,8 +32,8 @@ const Projects = () => {
             gitLink="https://github.com/Goksyfresh/Kickabout.git"
             techStack={["React Native", "React", "TypeScript", "Node.js", "Jest", "MongoDB","TailwindCSS","Zustand"]}
           />
-        </a>
-        <a href="#">
+        
+       
           {" "}
           <ProjectComponent
             img={projectImage2}
@@ -34,8 +44,8 @@ const Projects = () => {
             gitLink="https://github.com/Goksyfresh/OwnTheFit.git"
             techStack={["React", "TypeScript", "Node.js", "MongoDB","TailwindCSS","Redux","Cloudinary","Paystack","zod","firebase"]}
           />
-        </a>
-        <a href="#">
+        
+        
           {" "}
           <ProjectComponent
             img={projectImage3}
@@ -46,7 +56,7 @@ const Projects = () => {
             gitLink="https://github.com/Goksyfresh/Animated-shopping-carousel.git"
             techStack={['React', 'TypeScript', 'GSAP', 'TailwindCSS','Lenis']}
           />
-        </a>
+        
       </div>
     </section>
   );
