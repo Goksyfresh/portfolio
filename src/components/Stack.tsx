@@ -6,7 +6,7 @@ const Stack = ({stack}: {stack: string} ) => {
       background: 'linear-gradient(90deg, #9C83FF, #FF9051)'
     }}>
     <div className=' bg-[var(--background-color)] stack py-2 px-2 lg:px-4 rounded-full flex items-center justify-center [color:var(--text-color)]'>
-      <p className='[color:(var--text-color)] lg:text-lg text-sm'>{stack}</p>
+      <p className='[color:(var--text-color)] lg:text-lg text-[12px]'>{stack}</p>
     </div>
     </div>
   )

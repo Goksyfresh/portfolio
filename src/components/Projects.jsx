@@ -7,7 +7,7 @@ import projectImage4 from "../images/oaken.png"
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 mt-35 px-6">
+    <section className="flex flex-col items-center justify-center gap-4 mt-25 px-6">
       <h2 className="[color:var(--heading_1_color)] lg:text-3xl text-xl uppercase">
         Projects
       </h2>
