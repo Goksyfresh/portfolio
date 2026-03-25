@@ -9,7 +9,7 @@ import AnimationComponent from "./AnimationComponent";
 
 const Animations = () => {
   const getPreviewUrl = (link) => {
-    return `https://api.microlink.io?url=${encodeURIComponent(link)}&screenshot=true&meta=false`;
+    return `https://api.screenshotapi.net/screenshot?url=${encodeURIComponent(link)}&viewport=1280x720`;
   };
 
   return (
@@ -20,7 +20,7 @@ const Animations = () => {
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 ">
    {
     animations.map((animation, index)=>(
-        <AnimationComponent img={getPreviewUrl(animation.link)} siteLink={animation.link} key={index}/>
+        <AnimationComponent img={animation.preview} siteLink={animation.link} title={animation.title} description={animation.description} key={index}/>
     ))
    }
       </div>

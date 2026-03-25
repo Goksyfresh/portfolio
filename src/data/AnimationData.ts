@@ -1,6 +1,11 @@
+import screenshot1 from '../images/screenshot1.png'
+import screenshot2 from '../images/screenshot2.png'
+import screenshot3 from '../images/screenshot3.png'
+import screenshot4 from '../images/screenshot4.png'
 export const animations = [
   {
     title: "Image Hover Effect",
+    preview:screenshot1,
     description:
       "Interactive image gallery with smooth hover transitions and scale animations.",
     categories: ["CSS", "Framer Motion"],
@@ -10,6 +15,7 @@ export const animations = [
   },
   {
     title: "Image Gallery with Selection",
+    preview:screenshot2,
     description:
       "Interactive archive gallery allowing image selection with keyboard navigation and animated preview.",
     categories: ["GSAP", "Canvas"],
@@ -19,6 +25,7 @@ export const animations = [
   },
   {
     title: "Hero Section with Text Animation",
+    preview:screenshot3,
     description:
       "Full-screen hero section featuring character-by-character text animation and scroll-triggered reveals.",
     categories: ["GSAP", "SVG"],
@@ -28,6 +35,7 @@ export const animations = [
   },
   {
     title: "Progress Indicator Animation",
+    preview:screenshot4,
     description:
       "Dynamic progress animation with visual feedback and state management.",
     categories: ["GSAP", "Framer Motion"],
