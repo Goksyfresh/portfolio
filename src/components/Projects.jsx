@@ -4,6 +4,7 @@ import projectImage from "../images/kicky.png";
 import projectImage2 from "../images/otf.png";
 import projectImage3 from "../images/shopper.png";
 import projectImage4 from "../images/oaken.png"
+import projectImage5 from '../images/launchfolio.png'
 
 const Projects = () => {
   return (
@@ -12,6 +13,15 @@ const Projects = () => {
         Projects
       </h2>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 ">
+        <ProjectComponent
+            img={projectImage5}
+            title="Launchfolio website recreate"
+            description="A framer template I recreated using code."
+            siteLink="https://launchfolio-rcr8.vercel.app"
+            Xlink="https://x.com/Oyegoke19/status/2018945806091297056?s=20"
+            gitLink="https://github.com/Goksyfresh/launchfolio-rcr8.git"
+            techStack={['Nextjs', 'TypeScript', 'GSAP', 'TailwindCSS','Lenis']}
+          />
      {" "}
           <ProjectComponent
             img={projectImage4}
